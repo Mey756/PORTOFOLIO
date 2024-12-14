@@ -627,6 +627,7 @@ h3.my-profession
     text-align: center; /* Rata tengah */
     margin-bottom: 20px; /* Jarak bawah */
     font-weight: bold; /* Tebal font */
+    margin-top: 260px;
 }
 
 .certificate .certificate-heading h2
@@ -656,6 +657,7 @@ h3.my-profession
 {
     color: var(--text-black-900);
 }
+
 
 /* portfolio*/
 .portfolio-container 
