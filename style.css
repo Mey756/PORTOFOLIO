@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:wght@200;300;400;500;600;700&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:wght@200;300;400;500;600;700&family=Squada+One&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
 :root
 {
@@ -196,45 +196,58 @@ ul
     text-transform: capitalize;
 }
 
-.aside .logo a
-{
-    color : var(--text-black-900);
+.aside .logo a {
+    color: var(--text-black-900);
     font-weight: 700;
-    padding: 15px 20px;
+    padding: 20px 25px;
     font-size: 30px;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
     position: relative;
+    display: inline-block;
 }
 
-.aside .logo a span
-{
-    font-family: 'Clicker Script', cursive;
+
+.aside .logo a span {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     font-size: 32px;
+    line-height: 1;
 }
 
-.aside .logo a::before
-{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-    bottom: 3px;
-    left: -1px;
+.aside .logo .tagline {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-black-900);
+    opacity: 0.5;
+    margin-top: 2px;
 }
 
-.aside .logo a::after
-{
+.aside .logo a::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-    bottom: auto;
-    left: auto;
-} 
+    width: 15px;
+    height: 15px;
+    border-bottom: 4px solid var(--skin-color);
+    border-left: 4px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid var(--skin-color);
+    border-right: 4px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
 
 .aside .nav-toggler
 {
@@ -344,15 +357,15 @@ ul
 }
 .name
 {
-    font-family: 'Clicker Script', cursive;
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
     color: var(--skin-color);
 }
 h3.my-profession
 {
-    font-size: 24px;
-    margin: 15px 0;
+    font-size: 20px;
+    margin: 13px 0;
 }
 .typing 
 {
@@ -435,6 +448,8 @@ h3.my-profession
 .about .about-content .about-text h3 span
 {
     color: var(--skin-color);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
 }
 .about .about-content .about-text .text
 {
@@ -442,22 +457,23 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
     text-align: justify;
+    padding-right: 45px;
 }
 .about .about-content .personal-info
 {
     flex: 0 0 60%;
     max-width: 60%;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .about .about-content .personal-info .info-item
 {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 .about .about-content .personal-info .info-item p
 {
     font-weight: 600;
-    padding: 10px 0;
+    padding: 9px 0;
     font-size: 16px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
@@ -637,13 +653,13 @@ h3.my-profession
 }
 .certificate .certificate-item
 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
     margin-bottom: 30px;
 }
 .certificate .certificate-item-inner
 {
-    border: 6px solid var(--bg-black-100);
+    border: 3px solid var(--text-black-700);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -652,10 +668,13 @@ h3.my-profession
 {
     width: 100%;
     display: block;
+    padding: 5px;
 }
 .certificate .certificate-item-inner .icon 
 {
     color: var(--text-black-900);
+    padding: 8px;
+    font-size: 14px ;
 }
 
 
@@ -737,79 +756,190 @@ h3.my-profession
 .work-card h3 {
     margin: 0 0 10px;
     color: var(--bg-black-100);
+    font-size: 17px;
 }
 
-  
-  .demo-button {
+/* startPORTOFOLIO */
+.work-card .work-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--bg-black-50);
+    margin-top: 4px;
+    
+}
+/* Container khusus kategori Desain (bukan work-grid biasa) */
+.work-grid.design-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Card desain: ukuran ngikut gambar, ga dipaksa isi 1 kolom grid */
+.work-card.design-only {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background: transparent;
+}
+
+.work-card.design-only img {
+    width: auto;
+    max-width: 220px;
+    max-height: 340px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Responsif biar ga kegedean di layar kecil */
+@media (max-width: 600px) {
+    .work-card.design-only img {
+        max-width: 160px;
+        max-height: 200px;
+    }
+}
+/* end PORTFOLIO */
+
+.demo-button {
     background-color: #ff4747;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 5px 12px;
+    font-size: 8px;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-  }
+    transition: all 0.3s ease;
+}
   
   .demo-button:hover {
     background-color: #ff6363;
+    transform: scale(1.03);
   }
   
-  /* Popup Overlay */
+  /* ===================== Popup (versi baru) ===================== */
   .popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    animation: fadeIn 0.3s ease;
   }
-  
+
   .popup-overlay.hidden {
     display: none;
   }
-  
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
   .popup-content {
-    background: #d3d3d3;
-    color: #000;
-    padding: 30px;
-    border-radius: 10px;
-    width: 400px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    padding: 26px 28px;
+    border-radius: 12px;
+    width: 340px;
+    max-width: 88%;
+    max-height: 75vh;
+    overflow-y: auto;
     text-align: left;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    animation: slideUp 0.3s ease;
   }
-  
+
   .popup-content h2 {
-    margin: 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    margin: 0 0 12px;
+    color: var(--text-black-900);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--skin-color);
   }
-  
+
   .popup-content p {
-    margin: 5px 0;
+    margin: 6px 0;
+    line-height: 1.5;
+    font-size: 13px;
+    color: var(--text-black-700);
   }
-  
+
+  .popup-content p strong {
+    color: var(--text-black-900);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 6px;
+  }
+
+  .popup-content #popup-description {
+    color: var(--text-black-700);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+
   .popup-content a {
     display: inline-block;
-    margin-top: 10px;
-    background-color: #ff4747;
+    margin-top: 14px;
+    background-color: var(--skin-color);
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 9px 22px;
+    border-radius: 25px;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
   }
-  
+
   .popup-content a:hover {
-    background-color: #ff6363;
+    transform: scale(1.04);
+    box-shadow: 0 6px 16px rgba(255, 71, 71, 0.3);
   }
-  
+
   .close-button {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    color: white;
+    top: 12px;
+    right: 16px;
+    font-size: 22px;
+    color: var(--text-black-700);
     cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s ease;
   }
+
+  .close-button:hover {
+    color: var(--skin-color);
+  }
+  /* ===================== End Popup ===================== */
   
 
 /*contact*/
@@ -830,8 +960,8 @@ h3.my-profession
 
 .contact .contact-info-item
 {
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 0 0 20%;
+    max-width: 20%;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -843,6 +973,12 @@ h3.my-profession
 {
     font-size: 25px;
     color: var(--skin-color);
+}
+.contact .contact-info-item .icon .fa-brands
+{
+    font-size: 25px;
+    color: var(--skin-color);
+    display: inline-block;
 }
 .contact .contact-info-item h4
 {
@@ -889,6 +1025,7 @@ h3.my-profession
     font-size: 16px;
     color: var(--text-black-700);
     transition: all 0.3s ease;
+    
 }
 .contact .contact-form .form-item .form-control:focus
 {
@@ -976,3 +1113,56 @@ h3.my-profession
     }
 }
 
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background: var(--text-black-700);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    margin-bottom: 5px;
+    color: var(--card-text-color);
+
+}
+
+.category-card .count {
+    font-size: 14px;
+    color: rgb(138, 149, 157);
+}
+
+.back-button {
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    background: var(--skin-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
