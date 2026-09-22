@@ -208,7 +208,7 @@ const projectData = {
         {img: "image/desain/beranda.png"},
         {img: "image/desain/beranda2.jpeg"},
         {img: "image/desain/keuangan.png"},
-        {img: "image/desain/keuangan.jpeg"},
+        {img: "image/desain/Keuangan.jpeg"},
         {img: "image/desain/prioritas.png"},
         {img: "image/desain/prioritas.jpeg"},
         {img: "image/desain/prioritas2.jpeg"},
