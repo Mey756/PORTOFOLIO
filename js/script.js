@@ -191,14 +191,32 @@ const projectData = {
     ],
     android: [
         {
-            title: "Aplikasi Manajemen Keuangan Mahasiswa",
+            title: "M-Smart - Aplikasi Manajemen Keuangan Mahasiswa",
             description: "M-Smart adalah aplikasi Android pengelola keuangan mahasiswa dengan fitur pencatatan transaksi manual/OCR struk, multi bank/e-wallet, riwayat berfilter, dan split bill. Dilengkapi laporan grafik tren, distribusi kategori, insight otomatis, dan target tabungan. Fitur unggulan SPK Assistant memakai metode MOORA untuk rekomendasi prioritas pengeluaran berdasarkan urgensi, dampak, dana, frekuensi, biaya, dengan riwayat perankingan. Didukung agenda reminder bertingkat, catatan berformat, widget saldo real-time, dan notifikasi harian eskalatif.",
             created: "2026",
             technologies: "Android Studio & Java, database SQLite, Firebase Authentication, model pengembangan Prototyping.",
             role: "Developer",
             link: "https://drive.google.com/drive/folders/19_W3liTcG1p17fGXeRW6YcR0WJgHNZ_h?usp=sharing",
             img: "image/keuangan2.jpg"
-        }
+        },
+        {
+            title: "SmartAbility -  Asisten Aktivitas Harian Ramah Disabilitas",
+            description: "SmartAbility adalah aplikasi yang dirancang untuk membantu penyandang disabilitas dalam menjalani aktivitas sehari-hari. Fitur Pengingat Aktivitas, Catatan Suara, Pengingat, Lokasi Ramah Disabel, dan Tombol Darurat. Serta didukung fitur text-to-speech (ubah teks jadi suara)",
+            created: "2025",
+            technologies: "Android Studio, Java & database SQLite",
+            role: "Developer",
+            link: "https://drive.google.com/drive/folders/1E2wDImRHYI-RtKejz66EgstOp1F-5_V1?usp=drive_link",
+            img: "image/smartability.jpg"
+        },
+        {
+            title: "Aplikasi Daftar Film",
+            description: "Aplikasi ini dapat menonton film yang tersedia & dapat menambah ke daftar film favorit",
+            created: "2025",
+            technologies: "Android Studio & Java",
+            role: "Developer",
+            link: "https://drive.google.com/drive/folders/1HLAuoIzZtFLuqiTzPIdqotdGULqhCyf4?usp=drive_link",
+            img: "image/film.jpg"
+        },
     ],
     desain: [
         {img: "image/desain/regis.png"},
