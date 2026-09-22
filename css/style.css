@@ -457,7 +457,7 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
     text-align: justify;
-    padding-right: 45px;
+    padding-right: 25px;
 }
 .about .about-content .personal-info
 {
@@ -1165,4 +1165,28 @@ h3.my-profession
 
 .hidden {
     display: none;
+}
+
+/* ============ MOBILE: Portfolio & Hire Me ============ */
+@media (max-width: 767px) {
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+
+    .category-card img {
+        height: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about .about-content .personal-info .buttons .btn {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+    }
 }
