@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--============= Sytle Switcher ===========-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"  disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+<body >
+    <!-- ======== Main Container Start ========== -->
+    <div class="main-container">
+        <!-- ======= Aside Start ========= -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#">
+                <span>Mey</span>
+                <small class="tagline">Portfolio</small>
+                </a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i><span data-i18n="nav_home">Home</span></a></li>
+                <li><a href="#about"><i class="fa fa-user"></i><span data-i18n="nav_about">About</span></a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i><span data-i18n="nav_portfolio">Portfolio</span></a></li>
+                <li><a href="#certificate"><i class="fa fa-certificate"></i><span data-i18n="nav_cert">Certificate</span></a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i><span data-i18n="nav_contact">Contact</span></a></li>
+            </ul>
+        </div>
+        <!-- ======= Aside End ========= -->
+        
+        <!-- ======= Main Content Start ========= -->
+        <div class="main-content">
+            <!-- ======= Home Section Start ========= -->
+            <section class="home active section" id="home"> 
+                <div class="container">
+                    <div class="row">
+                    <div class="home-info padd-15">
+                        <h3 class="hello" data-i18n-html="home_hello">
+                        <span class="hello">Hello</span>, I'm <span class="name">Meydina Dwi Wulandari</span></h3>
+                        <h3 class="my-profession"> <span data-i18n="home_iam">I'm</span> <span class="typing">a Fresh Graduate in Informatics Engineering</span></h3>
+                        <p data-i18n="home_desc">Bachelor's graduate in Informatics Engineering with an interest in technology, administration, and design. Open to job opportunities in IT as well as operations, and ready to learn and grow professionally.</p>
+                        <a href="cv/CV_Mey.pdf" download="cv/CV_Mey.pdf" class="btn" data-i18n="download_cv">Download CV</a>
+                    </div>
+                    <div class="home-img padd-15">
+                        <img src="image/9.png" alt="">
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= Home Section End ========= -->
+             
+            <!-- ======= About Section Start ========= -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 data-i18n="title_about">About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3 data-i18n-html="about_name">Meydina Dwi Wulandari <span> Informatics Engineering</span></h3>
+                                    <p class="text" data-i18n-html="about_text">During my studies, I learned various areas of information technology, from programming, application development, and system design to UI/UX design.
+            I have experience developing web and Android projects using HTML, CSS, JavaScript, Java, Python, and PHP, and I am used to working with tools such as Visual Studio Code, Android Studio, and Apache NetBeans IDE.
+            For design work, I use Canva and Adobe Express, and I am currently deepening my skills in Figma to support more complex UI/UX design.
+            I also have video editing skills to produce content.
+            In addition, I can operate Microsoft Office (Word, Excel, PowerPoint) and Google Sheets for documentation and data processing.<br><br>
+            One of the projects I developed is an Android-based student financial management app, which was my final project.
+            I am currently open to job opportunities in IT as well as operations, ready to grow my skills through professional experience, and committed to continuing to learn and contribute to technological innovation.</p>
+                                </div>
+                            </div>  
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="info_birthday">Birthday : <span data-date="2005-05-12">May 12, 2005</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="info_age">Age : <span>21</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="about_edu">Education : <span>Bachelor's in Informatics Engineering — Universitas Pamulang</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="info_ig">Instagram : <span>meeydinaa</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="info_phone">Phone : <span>+62 857 7625 2966</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p data-i18n-html="info_email">Email : <span>meydinawulandari22@gmail.com</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me" data-i18n="hire_me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ======= About Section End ========= -->
+
+            <!-- ======= Portfolio Section Start ========= -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 data-i18n="title_portfolio">Portfolio</h2>
+                    </div>
+                </div>
+        
+                    <!-- ===== TAMPILAN 1: Kartu Kategori ===== -->
+                    <div class="category-grid" id="categoryGrid">
+                        <div class="category-card" data-category="web">
+                            <img src="image/web3.jpg" alt="Web">
+                            <h3>Web</h3>
+                            <span class="count">5 Projects</span>
+                        </div>
+
+                        <div class="category-card" data-category="android">
+                            <img src="image/Android.jpg" alt="Android">
+                            <h3>Android</h3>
+                            <span class="count">1 Projects</span>
+                        </div>
+
+                        <div class="category-card" data-category="desain">
+                            <img src="image/desain.jpg" alt="Desain UI/UX">
+                            <h3 data-i18n="cat_design">Graphic Designer & Video Editor</h3>
+                            <span class="count">0 Projects</span>
+                        </div>
+                       
+
+                        <div class="category-card" data-category="dokumentasi">
+                            <img src="image/dokumentasi.jpeg" alt="Dokumentasi">
+                            <h3 data-i18n="cat_docs">Documentation</h3>
+                            <span class="count">2 Projects</span>
+                        </div>
+                    </div>
+
+                    <!-- ===== TAMPILAN 2: Daftar Proyek per Kategori ===== -->
+                    <div class="project-list hidden" id="projectList">
+                        <button class="back-button" id="backButton" data-i18n="back">← Back</button>
+                        <div class="work-grid" id="workGrid">
+                            <!-- diisi otomatis lewat JS -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Popup (tetap sama) -->
+            <div class="popup-overlay hidden">
+                <div class="popup-content">
+                    <span class="close-button">&times;</span>
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-description"></p>
+                    <p><strong data-i18n="pop_created">Created - </strong> <span id="popup-created"></span></p>
+                    <p><strong data-i18n="pop_tech">Technologies - </strong> <span id="popup-technologies"></span></p>
+                    <p><strong data-i18n="pop_role">Role - </strong> <span id="popup-role"></span></p>
+                    <a id="popup-link" href="#" target="_blank" data-i18n="pop_view">View Project</a>
+                </div>
+            </div>
+            <!-- ======= Portfolio Section End =========-->
+
+            <!-- ======= Certificate Section Start ========= -->
+            <section class="certificate section" id="certificate">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 data-i18n="title_cert">Certificate</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href=""><img src="image/LSP.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-27">June, 2026 </span>
+                                        
+                                    </h4></a>
+                                    <div class="certificate-desc" style="margin-top: 5px; margin-bottom: 8px; font-size: 13px; color: #666;">
+                                        (Sertifikat BNSP PEMROGRAM dalam proses cetak)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/f2da06911237bd63bf58b51e8b970940b8fbb1f8/view"><img src="image/cs_python.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-27">June 27, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/928f060251f675d035a08b3c8f18eab1fdddd3da/view"><img src="image/cs_ml.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-27">June 27, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/50762a651213fbb2b8eb712921d7d706a9ee3603/view"><img src="image/cs_pengembangan.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-26">June 26, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/fd91401c44d679bd9905cf153673ef55385eac79/view"><img src="image/cs_prompt.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-22">June 22, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/4410770321d9f835788668d231acfd8c8d3ed3ff/view"><img src="image/cs_ai.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-06-21">June 21, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.dicoding.com/dicodingassets/coursecertificate/b5381dc89a150a5ef6c1e408c8a3963eaddf3ea5/view"><img src="image/cs_finance.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2026-05-31">May 31, 2026</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.sololearn.com/certificates/CC-EYVEUQ0Q"><img src="image/cs.9.jpg" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2024-12-14">December 14, 2024</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href=""><img src="image/cs_frontend.png" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2024-12-12">December 12, 2024</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.sololearn.com/certificates/CC-MSBCBUTW"><img src="image/cs.8.jpg" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2024-12-05">December 5, 2024</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.sololearn.com/certificates/CC-1LNMJOAK"> <img src="image/cs.7.jpg" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2024-12-04">December 4, 2024</span>
+                                    </h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                        <!-- ========== Certificate item Start ========= -->
+                        <div class="certificate-item padd-15">
+                            <div class="certificate-item-inner">
+                                <div class="certificate-img">
+                                    <a href="https://www.sololearn.com/certificates/CC-YJA7SXB9"><img src="image/cs.5.jpg" alt=""><h4 class="icon">
+                                        <i class="fa fa-calendar"></i> <span data-date="2024-11-27">November 27, 2024</span>
+                                    </h4>
+                                </div></a>
+                                </div>
+                        </div>
+                        <!-- ========== Certificate item End ========= -->
+                    </div>
+                </div>
+            </section>
+            <!-- ======= Certificate Section End ========= -->
+            
+            
+            <!-- ======= Contact Section Start ========= -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2 data-i18n="title_contact">Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15" data-i18n="contact_title">Have any questions?</h3>
+                    <h4 class="contact-sub-title padd-15" data-i18n-html="contact_sub">I'M READY TO ANSWER<br><br>(click any icon below to reach me directly)</h4>
+                    <div class="row">
+                        <!-- ======= Contact info item Start ========= -->
+                        <div class="contact-info-item padd-15">
+                            <a href="tel:+6285776252966" class="contact-link">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4 data-i18n="contact_call">Call Me</h4>
+                                <p>+62 857 7625 2966</p>
+                            </a>
+                        </div>
+                        <!-- ======= Contact info item End ========= -->
+                        <!-- ======= Contact info item Start ========= -->
+                        <div class="contact-info-item padd-15">
+                            <a href="https://wa.me/6281233971939" target="_blank" class="contact-link">
+                                <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <h4>WhatsApp</h4>
+                                <p>0812 3397 1939</p>
+                            </a>
+                        </div>
+                        <!-- ======= Contact info item End ========= -->
+                        <!-- ======= Contact info item Start ========= -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><a href="https://maps.app.goo.gl/xwgyWvv9PB4pK2xb6"><i class="fa fa-map-marker-alt" ></i></a></div>
+                            <h4 data-i18n="contact_loc">Location</h4>
+                            <p>Ngawi-Depok</p>
+                        </div>
+                        <!-- ======= Contact info item End ========= -->
+                        <!-- ======= Contact info item Start ========= -->
+                        <div class="contact-info-item padd-15">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meydinawulandari22@gmail.com" target="_blank" class="contact-link">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>meydinawulandari22@gmail.com</p>
+                            </a>
+                        </div>
+                        <!-- ======= Contact info item End ========= -->
+                        <!-- ======= Contact info item Start ========= -->
+                        <div class="contact-info-item padd-15">
+                            <a href="https://instagram.com/meeydinaa" target="_blank" class="contact-link">
+                                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                                <h4>Instagram</h4>
+                                <p>meeydinaa</p>
+                            </a>
+                        </div>
+                        <!-- ======= Contact info item End ========= --> 
+                    </div>
+                    <h3 class="contact-title padd-15" data-i18n="mail_title">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15" data-i18n="mail_sub">I RESPOND QUICKLY TO MESSAGES</h4> 
+                    <!-- ======= Contact Form ========= --> 
+                </div>
+                <!-- modify this form HTML and place wherever you want your form -->
+            <form
+            action="https://formspree.io/f/mqakdjkn"
+            method="POST"
+            >
+                <div class="row">
+                    <div class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="text" name="Nama" class="form-control" placeholder="Name" data-i18n-placeholder="ph_name">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" data-i18n-placeholder="ph_email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input type="text" name="Subjek" class="form-control" placeholder="Subject" data-i18n-placeholder="ph_subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" id="" placeholder="Message" data-i18n-placeholder="ph_message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <button type="submit" class="btn" data-i18n="send">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </section>  
+            <!-- ======= Contact Section End ========= -->
+        </div>
+        <!-- ======= Main Container End ========= -->
+    </div>
+    <!-- ======== Main Container End ========== -->
+    <!-- ======= Style Switcher Start ========= -->
+    <div class="style-switcher">
+        <div class="lang-toggle s-icon" id="lang-toggle" role="button" tabindex="0" title="Switch to Bahasa Indonesia" aria-label="Change language">
+            <span id="lang-label">ID</span>
+        </div>
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4 data-i18n="theme_colors">Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- ======= Style Switcher End ========= -->
+    <!-- ======= JS File ========= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+    <script src="js/lang-switcher.js"></script>
+</body>
+</html>
